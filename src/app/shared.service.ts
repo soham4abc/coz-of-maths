@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SharedService {
   blogtitle = 'Blogpost';
+  bseurl = 'http://localhost:4200';
 
   constructor() {}
 }
