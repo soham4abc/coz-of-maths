@@ -7,6 +7,7 @@
 .card-body {
   display: flex;
   padding: 15px;
+  background: #80b5c7;
 }
 
 h3 {
@@ -18,12 +19,12 @@ img {
 }
 
 .meta-info {
-  color: grey;
+  color: rgb(116, 28, 28);
   margin-top: -28px;
   font-size: 14px;
 }
 
 .continue-reading {
   font-style: italic;
-  color: grey;
+  color: rgb(122, 33, 33);
 }
