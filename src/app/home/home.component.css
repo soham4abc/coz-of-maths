@@ -1,0 +1,40 @@
+.card {
+  border: 1px solid rgb(15, 123, 211);
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.heading {
+  text-align: center;
+}
+.comm {
+  color: red;
+  padding: 30px;
+  text-align: center;
+}
+.card-body {
+  padding: 15px;
+  background: #80b5c7;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+img {
+  max-height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.meta-info {
+  color: rgb(116, 28, 28);
+  margin-top: -28px;
+  font-size: 14px;
+}
+
+.continue-reading {
+  font-style: italic;
+  color: rgb(122, 33, 33);
+}

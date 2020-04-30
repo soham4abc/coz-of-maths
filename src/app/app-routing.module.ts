@@ -5,13 +5,14 @@ import { AboutComponent } from './about/about.component';
 import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ViewsComponent } from './views/views.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'articles', component: ArticleListComponent },
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'views', component: ViewsComponent },
   { path: '404', component: NotFoundComponent },
-  { path: '', component: ArticleListComponent },
+  { path: 'articles', component: ArticleListComponent },
   { path: ':key', component: ArticleComponent },
   { path: '**', component: NotFoundComponent },
 ];
