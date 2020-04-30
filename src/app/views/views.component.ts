@@ -23,6 +23,7 @@ export class ViewsComponent implements OnInit {
   public state: any;
   public date: any;
   public require: any;
+  public urviews: any;
   constructor() {}
 
   ngOnInit(): void {}
