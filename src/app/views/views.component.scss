@@ -1,0 +1,39 @@
+o {
+  text-align: center;
+}
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: arial, Arial, Helvetica, sans-serif;
+}
+.card {
+  border: 1px solid rgb(90, 5, 201);
+  border-radius: 4px;
+  margin-top: 15px;
+  text-align: center;
+  padding: 15px;
+}
+
+.card-body {
+  display: flex;
+  padding: 15px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+img {
+  max-height: 200px;
+}
+
+.meta-info {
+  color: grey;
+  margin-top: -28px;
+  font-size: 14px;
+}
+
+.continue-reading {
+  font-style: italic;
+  color: grey;
+}

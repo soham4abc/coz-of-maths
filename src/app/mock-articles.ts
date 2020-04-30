@@ -23,4 +23,14 @@ export const ARTICLES: Article[] = [
     imageurl:
       'https://cdn0.iconfinder.com/data/icons/education-213/64/brain-mind-smart-think-intelligence-512.png',
   },
+  {
+    id: 3,
+    content: './form.html',
+    title: 'Ideologies',
+    description: 'views about the people and world',
+    key: 'the-views-article',
+    date: new Date(),
+    imageurl:
+      'https://cdn0.iconfinder.com/data/icons/education-213/64/brain-mind-smart-think-intelligence-512.png',
+  },
 ];

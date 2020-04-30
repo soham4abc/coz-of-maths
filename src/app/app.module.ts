@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewsComponent } from './views/views.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ArticleComponent,
     NotFoundComponent,
+    ViewsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

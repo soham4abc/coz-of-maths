@@ -4,10 +4,12 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { AboutComponent } from './about/about.component';
 import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ViewsComponent } from './views/views.component';
 
 const routes: Routes = [
   { path: 'articles', component: ArticleListComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'views', component: ViewsComponent },
   { path: '404', component: NotFoundComponent },
   { path: '', component: ArticleListComponent },
   { path: ':key', component: ArticleComponent },
@@ -15,9 +17,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabled'
-})],
+  imports: [
+    RouterModule.forRoot(routes, {
+      initialNavigation: 'enabled',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
