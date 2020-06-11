@@ -1,57 +1,51 @@
-<form #addressForm="ngForm" class="container mt-3" (ngSubmit)="logValue()">
-  <div class="row justify-content-center">
-    <div class="col-6">
-      <button type="button" class="btn btn-primary mb-2" (click)="addAddress()">Add Article</button>
-      <section class="container border mb-4 p-3" *ngFor="let address of addresses; let i = index;">
-        <div class="row">
-          <div class="col-6">
-            <h4>Article {{i + 1}}</h4>
-          </div>
-          <div class="col-6 text-center">
-            <button type="button" class="btn btn-danger btn-sm" (click)="removeAddress(i)">Remove</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="form-group">
-              <label>Article name:</label>
-              <input type="text" class="form-control" [(ngModel)]="address.address" name="address_{{address.id}}"
-                placeholder="Enter article name here" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <label>Date:</label>
-              <input type="date" class="form-control" [(ngModel)]="address.street" name="street_{{address.id}}" />
-            </div>
-          </div>
-        </div>
+<form class="card-body">
+  <div class="img">
+    <img
+      src="https://lh3.googleusercontent.com/proxy/O7HRwzr-A2uhuOMJxXnPUbsQLT-Pfr5dkPeJ2uPvgbNmQEdwEfW54oznTvgyQyNqMsnx4BFkLpJU7pdz3rFlsltKLXjr9D5OjvsSU1jLZ7ykY3fqBi7AeBMKOZZj9trAUmT_H6sZEMbOQ1GAf_V5ZTG1Ogo2">
+  </div>
 
-        <div class="row">
-          <div class="col-6">
-            <div class="form-group">
-              <label>Author name:</label>
-              <input type="text" class="form-control" [(ngModel)]="address.city" name="city_{{address.id}}"
-                placeholder="enter your name" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <label>Content</label>
-              <input type="text" class="form-control" [(ngModel)]="address.country" name="country_{{address.id}}"
-                placeholder="Your content">
-
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="text-right">
-        <input type="submit" class="btn btn-success" value="Submit" />
-      </div>
-
+  <section class="container border mb-4 p-3" *ngFor="let address of addresses; let i = index;">
+    <div class="">
+      <h3> Article number : {{i+ 1}}:- </h3>
     </div>
+    <div class="col-6 text-center">
+      <button type="button" class="btn btn-danger btn-sm" (click)="removeAddress(i)">Remove</button>
+    </div>
+    <br>
+    <div class="continue-reading">
+      <label>Article name: </label>
+      <input type="text" class="form-control" [(ngModel)]="address.address" name="address_{{address.id}}"
+        placeholder="Enter article name here" />
+    </div>
+    <br>
+    <div class="continue-reading">
+      <label>Date: </label>
+      <input type="date" class="form-control" [(ngModel)]="address.street" name="street_{{address.id}}" />
+    </div>
+    <br>
+
+    <div class="continue-reading">
+      <label>Author name: </label>
+      <input type="text" class="form-control" [(ngModel)]="address.city" name="city_{{address.id}}"
+        placeholder="enter your name" />
+    </div>
+    <br>
+    <div class="continue-reading">
+      <label>Content: </label>
+      <input type="text" class="form-control" [(ngModel)]="address.country" name="country_{{address.id}}"
+        placeholder="Your content">
+    </div>
+    <br>
+
+
+  </section>
+
+  <div class="continue-reading">
+    <button type="button" class="btn btn-primary mb-2" (click)="addAddress()">Add Article</button>
+  </div>
+  <br>
+  <div class="continue-reading">
+    <input type="submit" class="btn btn-success" value="Submit" />
   </div>
 
 </form>
