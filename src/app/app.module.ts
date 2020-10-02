@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewsComponent } from './views/views.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { VendorsRegisterComponent } from './vendors-register/vendors-register.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
     ViewsComponent,
     UserRegisterComponent,
     UserLoginComponent,
+    VendorsRegisterComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

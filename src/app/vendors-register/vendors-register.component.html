@@ -1,0 +1,52 @@
+<div>
+    <h1><u>Enter details to continue registration:</u></h1>
+</div>
+<div class="card-body">    
+    <form class="">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+       
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="mobile">Mobile number:</label><br>
+        <input type="number" id="mobile" name="mobile"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="town">town:</label><br>
+        <input type="text" id="town" name="town"><br>
+
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state"><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="Country" name="Country"><br>
+
+        <label for="pin">PIN:</label><br>
+        <input type="number" id="pin" name="pin"><br>
+
+        <label for="device_type">Device type:</label> <br>
+             <select id="device_type" name="device_type">
+                 <option value="android">Android</option>
+                <option value="iOS">Apple iOS</option>
+                <option value="windows">Windows</option>
+                <option value="linux">Linux</option>
+             </select>
+             <br>
+             <br>
+        <input type="submit"> <br>
+        <br>
+        <button type="button">Register</button>
+    </form>
+</div>
+<div class="card-body">
+    Already Have an account?<br>
+    <br>
+    <input type="button" value="Login" [routerLink]="['../user_login']" class="btn">
+
+</div>
