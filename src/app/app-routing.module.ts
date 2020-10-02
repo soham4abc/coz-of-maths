@@ -6,15 +6,20 @@ import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ViewsComponent } from './views/views.component';
 import { HomeComponent } from './home/home.component';
+import { UserRegisterComponent } from './user-register/user-register.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'views', component: ViewsComponent },
+  {path: 'user_register', component: UserRegisterComponent},
+  {path: 'user_login', component: UserLoginComponent},
   { path: '404', component: NotFoundComponent },
   { path: 'articles', component: ArticleListComponent },
   { path: ':key', component: ArticleComponent },
   { path: '**', component: NotFoundComponent },
+  
 ];
 
 @NgModule({

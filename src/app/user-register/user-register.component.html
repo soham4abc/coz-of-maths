@@ -1,0 +1,26 @@
+<div>
+    <h1><u>Enter details to continue registration:</u></h1>
+</div>
+<div class="card-body">    
+    <form class="">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+       
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="mobile">Mobile number:</label><br>
+        <input type="number" id="mobile" name="mobile"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <br>
+        <button type="button">Register</button>
+    </form>
+</div>
+<div class="card-body">
+    Already Have an account?<br>
+    <br>
+    <input type="button" value="Login" [routerLink]="['../user_login']" class="btn">
+
+</div>

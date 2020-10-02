@@ -12,6 +12,8 @@ import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewsComponent } from './views/views.component';
+import { UserRegisterComponent } from './user-register/user-register.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ViewsComponent } from './views/views.component';
     ArticleComponent,
     NotFoundComponent,
     ViewsComponent,
+    UserRegisterComponent,
+    UserLoginComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
