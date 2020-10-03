@@ -16,6 +16,8 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { VendorsRegisterComponent } from './vendors-register/vendors-register.component';
 import { VendorLoginComponent } from './vendor-login/vendor-login.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { VendorProfileComponent } from './vendor-profile/vendor-profile.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { VendorLoginComponent } from './vendor-login/vendor-login.component';
     UserLoginComponent,
     VendorsRegisterComponent,
     VendorLoginComponent,
+    UserProfileComponent,
+    VendorProfileComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

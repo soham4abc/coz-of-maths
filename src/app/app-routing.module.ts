@@ -10,6 +10,8 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { VendorsRegisterComponent } from './vendors-register/vendors-register.component';
 import { VendorLoginComponent } from './vendor-login/vendor-login.component';
+import { VendorProfileComponent } from './vendor-profile/vendor-profile.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,8 +19,10 @@ const routes: Routes = [
   { path: 'views', component: ViewsComponent },
   {path: 'user_register', component: UserRegisterComponent},
   {path: 'user_login', component: UserLoginComponent},
+  {path: 'user_profile', component: UserProfileComponent},
   {path: 'vendor_register', component: VendorsRegisterComponent},
   {path: 'vendor_login', component: VendorLoginComponent},
+  {path: 'vendor_profile', component: VendorProfileComponent},
   { path: '404', component: NotFoundComponent },
   { path: 'articles', component: ArticleListComponent },
   { path: ':key', component: ArticleComponent },
