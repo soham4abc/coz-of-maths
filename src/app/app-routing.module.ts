@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { VendorsRegisterComponent } from './vendors-register/vendors-register.component';
+import { VendorLoginComponent } from './vendor-login/vendor-login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'user_register', component: UserRegisterComponent},
   {path: 'user_login', component: UserLoginComponent},
   {path: 'vendor_register', component: VendorsRegisterComponent},
+  {path: 'vendor_login', component: VendorLoginComponent},
   { path: '404', component: NotFoundComponent },
   { path: 'articles', component: ArticleListComponent },
   { path: ':key', component: ArticleComponent },
