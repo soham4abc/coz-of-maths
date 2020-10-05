@@ -18,6 +18,11 @@ import { VendorsRegisterComponent } from './vendors-register/vendors-register.co
 import { VendorLoginComponent } from './vendor-login/vendor-login.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { VendorProfileComponent } from './vendor-profile/vendor-profile.component';
+import { ElectronicsComponent } from './electronics/electronics.component';
+import { FashionComponent } from './fashion/fashion.component';
+import { MenComponent } from './men/men.component';
+import { WomenComponent } from './women/women.component';
+import { HomeApllComponent } from './home-apll/home-apll.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,11 @@ import { VendorProfileComponent } from './vendor-profile/vendor-profile.componen
     VendorLoginComponent,
     UserProfileComponent,
     VendorProfileComponent,
+    ElectronicsComponent,
+    FashionComponent,
+    MenComponent,
+    WomenComponent,
+    HomeApllComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

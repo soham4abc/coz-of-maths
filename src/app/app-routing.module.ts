@@ -12,6 +12,11 @@ import { VendorsRegisterComponent } from './vendors-register/vendors-register.co
 import { VendorLoginComponent } from './vendor-login/vendor-login.component';
 import { VendorProfileComponent } from './vendor-profile/vendor-profile.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { ElectronicsComponent } from './electronics/electronics.component';
+import { MenComponent } from './men/men.component';
+import { FashionComponent } from './fashion/fashion.component';
+import { WomenComponent } from './women/women.component';
+import { HomeApllComponent } from './home-apll/home-apll.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +28,13 @@ const routes: Routes = [
   {path: 'vendor_register', component: VendorsRegisterComponent},
   {path: 'vendor_login', component: VendorLoginComponent},
   {path: 'vendor_profile', component: VendorProfileComponent},
+  {path:'electronics', component:ElectronicsComponent},
+  {path:'fashion',component:FashionComponent},
+  {path:'men',component:MenComponent},
+  {path:'women',component:WomenComponent},
+  {path:'home_apll',component:HomeApllComponent},
+
+
   { path: '404', component: NotFoundComponent },
   { path: 'articles', component: ArticleListComponent },
   { path: ':key', component: ArticleComponent },
