@@ -2,20 +2,20 @@
     <h1><u>Enter details to continue registration:</u></h1>
 </div>
 <div class="card-body">    
-    <form class="">
+    <form (ngSubmit)="onSubmit(fm)" #fm="ngForm">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
+        <input type="text" id="name" ngModel name="name" ><br>
        
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" ngModel name="email" ><br>
         
         <label for="mobile">Mobile number:</label><br>
-        <input type="number" id="mobile" name="mobile"><br>
+        <input type="number" id="mobile" ngModel name="mobile" ><br>
 
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
+        <input type="password" id="password" ngModel name="password" ><br>
         <br>
-        <button type="button">Register</button>
+        <button type="submit">Register</button>
     </form>
 </div>
 <div class="card-body">

@@ -24,6 +24,7 @@ import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
 import { HomeApllComponent } from './home-apll/home-apll.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +52,8 @@ import { HomeApllComponent } from './home-apll/home-apll.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
