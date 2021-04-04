@@ -23,6 +23,9 @@ import { FashionComponent } from './fashion/fashion.component';
 import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
 import { HomeApllComponent } from './home-apll/home-apll.component';
+import { IcseComponent } from './icse/icse.component';
+import { CbseComponent } from './cbse/cbse.component';
+import { JeeComponent } from './jee/jee.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { HomeApllComponent } from './home-apll/home-apll.component';
     MenComponent,
     WomenComponent,
     HomeApllComponent,
+    IcseComponent,
+    CbseComponent,
+    JeeComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

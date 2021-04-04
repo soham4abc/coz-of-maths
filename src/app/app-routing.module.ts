@@ -17,6 +17,9 @@ import { MenComponent } from './men/men.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { WomenComponent } from './women/women.component';
 import { HomeApllComponent } from './home-apll/home-apll.component';
+import { IcseComponent } from './icse/icse.component';
+import { CbseComponent } from './cbse/cbse.component';
+import { JeeComponent } from './jee/jee.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,6 +35,9 @@ const routes: Routes = [
   {path:'fashion',component:FashionComponent},
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
+  {path:'icse',component:IcseComponent},
+  {path:'cbse',component:CbseComponent},
+  {path:'jee',component:JeeComponent},
   {path:'home_apll',component:HomeApllComponent},
 
 

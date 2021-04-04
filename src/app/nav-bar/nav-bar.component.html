@@ -1,25 +1,38 @@
 <header>
   <div class="title">
-    <a routerLink="">LaraShopee</a>
+    <a routerLink="">CozOfMaths</a>
   </div>
-  <nav class="navbar">
-    <div class="dropdown">
-      <div class="nav-item">Categories</div>
-      <div class="dropdown-content">
-        <a href="/electronics">Electronics</a>
-        <a href="/men">Men</a>
-        <a href="/women">Women</a>
-        <a href="/home_apll">Home Appliances</a>
+  <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      </div>
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="#">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#company">Company</a>
+      <a href="#team">Team</a>
+      <a href="#careers">Careers</a>
     </div>
-    <a routerLink="/articles" class="nav-item">Articles</a>
-   <!-- <a routerLink="/views" class="nav-item">Add articles</a>-->
-   
-    <a routerLink="/user_register" class="nav-item">Sign up</a>
-
-
-
-    <a routerLink="/about" class="nav-item">About</a>
-  </nav>
-</header>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Boards <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="/icse">ICSE</a>
+      <a href="/cbse">CBSE</a>
+      <a href="/jee">JEE (Mains & Advanced) </a>
+      <a href="#express">Express</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a>
+    </div>
+  </div>
+  <a href="#contact">Contact</a>
+</div>
